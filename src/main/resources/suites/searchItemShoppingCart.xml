@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Applaudo Studio Automation Practice">
+    <test name="Search item Shopping Tests">
+        <parameter name="baseUrl" value="http://automationpractice.com/index.php"/>
+        <parameter name="hostOs" value="windows"/>
+        <classes>
+            <class name="tests.Items.ASSearchItemTest">
+                <methods>
+                    <include name="AS_SearchItemShoppingCart"/>
+                    <include name="AS_SearchNonExistingItemShoppingCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

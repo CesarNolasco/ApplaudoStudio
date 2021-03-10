@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Applaudo Studio Automation Practice">
+    <test name="Store Validation Tests">
+        <parameter name="baseUrl" value="http://automationpractice.com/index.php"/>
+        <parameter name="hostOs" value="windows"/>
+        <classes>
+            <class name="tests.Items.ASStoreInfoValidationTest">
+                <methods>
+                    <include name="AS_ValidateStoreInformation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
